@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductCard from './ProductCard'
 
-function ProductList() {
+function ProductList(props) {
+  const {products} = props
+ 
   return (
     <div className="w-2/3 bg-blue-200 ">
       <h2>Product List</h2>
-      <ProductCard/>
+      <ProductCard />
     </div>
   )
 }
